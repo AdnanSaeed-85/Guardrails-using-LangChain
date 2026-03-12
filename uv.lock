@@ -286,6 +286,15 @@ wheels = [
 ]
 
 [[package]]
+name = "filetype"
+version = "1.2.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/bb/29/745f7d30d47fe0f251d3ad3dc2978a23141917661998763bebb6da007eb1/filetype-1.2.0.tar.gz", hash = "sha256:66b56cd6474bf41d8c54660347d37afcc3f7d1970648de365c102ef77548aadb", size = 998020, upload-time = "2022-11-02T17:34:04.141Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/18/79/1b8fa1bb3568781e84c9200f951c735f3f157429f44be0495da55894d620/filetype-1.2.0-py2.py3-none-any.whl", hash = "sha256:7ce71b6880181241cf7ac8697a2f1eb6a8bd9b429f7ad6d27b8db9ba5f1c2d25", size = 19970, upload-time = "2022-11-02T17:34:01.425Z" },
+]
+
+[[package]]
 name = "frozenlist"
 version = "1.8.0"
 source = { registry = "https://pypi.org/simple" }
@@ -469,6 +478,7 @@ dependencies = [
     { name = "langchain-community" },
     { name = "langchain-core" },
     { name = "langchain-groq" },
+    { name = "langchain-nvidia-ai-endpoints" },
     { name = "langchain-openai" },
     { name = "langgraph" },
 ]
@@ -480,6 +490,7 @@ requires-dist = [
     { name = "langchain-community", specifier = ">=0.4.1" },
     { name = "langchain-core", specifier = ">=1.2.17" },
     { name = "langchain-groq", specifier = ">=1.1.2" },
+    { name = "langchain-nvidia-ai-endpoints", specifier = ">=1.2.0" },
     { name = "langchain-openai", specifier = ">=1.1.10" },
     { name = "langgraph", specifier = ">=1.0.10" },
 ]
@@ -730,6 +741,21 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/3d/d9/bbaa43598fcaffb669c5aea4088d92c77a426c46d25a013c21c979772a54/langchain_groq-1.1.2.tar.gz", hash = "sha256:67d1d752fb6590be517735947ec49b4ab9ed9191c7cca79f105d227775c67ae5", size = 178337, upload-time = "2026-02-02T15:57:29.435Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e8/11/71a35db3ed8ac2c7129eb69f0d590e4961be67ac84b6c470fc097d0dd7c8/langchain_groq-1.1.2-py3-none-any.whl", hash = "sha256:1f59f12233e8e6280c968bca6c40a7e5434e971e9a5387ad23c4c64ec776de10", size = 19450, upload-time = "2026-02-02T15:57:28.6Z" },
+]
+
+[[package]]
+name = "langchain-nvidia-ai-endpoints"
+version = "1.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aiohttp" },
+    { name = "filetype" },
+    { name = "langchain-core" },
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/47/4b/e417af1b2b7f861f37e26bf4fa4b05cda4052002e3f84a966f0735baf94f/langchain_nvidia_ai_endpoints-1.2.0.tar.gz", hash = "sha256:4bd63b812707ea348a86539001aa9a89b3cba3ee56ade7379247a955e4bfd3eb", size = 53851, upload-time = "2026-03-10T17:55:08.127Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/66/e4/186f1a99e4d30bd91c8438d024dc73a71c8f7e0657c7acb6e79658aa19cf/langchain_nvidia_ai_endpoints-1.2.0-py3-none-any.whl", hash = "sha256:c8e075d5b3d31216374af0cfa9e690ab28ada3ebbde34dd6d36fe16a26d883cc", size = 58269, upload-time = "2026-03-10T17:55:06.339Z" },
 ]
 
 [[package]]
